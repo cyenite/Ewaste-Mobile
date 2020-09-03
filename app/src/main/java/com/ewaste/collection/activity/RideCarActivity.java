@@ -547,7 +547,7 @@ public class RideCarActivity extends AppCompatActivity
     private void onDestination() {
 
         if (destinationMarker != null) destinationMarker.remove();
-        LatLng centerPos = gMap.getCameraPosition().target;
+        LatLng centerPos = new LatLng(-1.2902777777777779,36.698055555555555);
         destinationMarker = gMap.addMarker(new MarkerOptions()
                 .position(centerPos)
                 .title("Destination")
