@@ -82,7 +82,7 @@
                                     android:layout_width="80dp"
                                     android:layout_height="wrap_content"
                                     android:gravity="center"
-                                    android:text="+62"
+                                    android:text="+254"
                                     android:textAlignment="center"
                                     android:textColor="@color/black"
                                     android:textSize="15dp" />

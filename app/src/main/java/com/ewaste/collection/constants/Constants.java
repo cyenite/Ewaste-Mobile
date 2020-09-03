@@ -6,14 +6,10 @@ import com.google.android.gms.maps.model.LatLngBounds;
 import java.text.SimpleDateFormat;
 import java.util.Locale;
 
-/**
- * Created by Ourdevelops Team on 12/23/2019.
- */
-
 public class Constants {
 
-    public static final String BASE_URL = "http://your-url.com/";
-    public static final String FCM_KEY = "your-fcm-key";
+    public static final String BASE_URL = "http://ewaste.dekutrends.co.ke/";
+    public static final String FCM_KEY = "AAAAHRNOuPk:APA91bEopNiJJkb3gyTwkgd_sc2PkbS8TaCc44lviQSw9hj2gPTeF_bVcZ7GTzgbh7ouh7MqDT1qRmuvYIFnO6uNK_T5E4KPqmtvOQy7ejp4e0bTqFGb2tFQ60RZhuRVSFZYy0NY49A4";
     public static final String CONNECTION = BASE_URL + "api/";
     public static final String IMAGESFITUR = BASE_URL + "images/fitur/";
     public static final String IMAGESMERCHANT = BASE_URL + "images/merchant/";

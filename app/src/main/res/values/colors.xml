@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#0064D3</color>
-    <color name="colorgradient">#6DC0FF</color>
-    <color name="colorgradienttransparent">#8F6DC0FF</color>
-    <color name="coloraccent">#3690D3</color>
+    <color name="colorPrimary">#388E3C</color>
+    <color name="colorgradient">#4CAF50</color>
+    <color name="colorgradienttransparent">#BC4CAF50</color>
+    <color name="coloraccent">#8BC34A</color>
     <color name="white">#fff</color>
     <color name="black">#2F2F2F</color>
     <color name="orange">#ff120b</color>
@@ -11,7 +11,7 @@
     <color name="yellow">#ffbb00</color>
     <color name="transparentblack">#b9000000</color>
     <color name="backgroundgray">#f2f2f2</color>
-    <color name="parentcolor">#0064D3</color>
+    <color name="parentcolor">#388E3C</color>
     <color name="transparent">#00FFFFFF</color>
     <color name="graybackground">#e9e9e9</color>
     <color name="darkgray">#AAAAAA</color>
@@ -27,8 +27,8 @@
     <color name="gray">#b6b6b6</color>
     <color name="light_ferozi">#dbf6fd</color>
     <color name="delete_message_text">#b8b8b8</color>
-    <color name="fiftypercenttranparent">#B96DC0FF</color>
-    <color name="alphabet_text_selected_color">#3F51B5</color>
+    <color name="fiftypercenttranparent">#8D388E3C</color>
+    <color name="alphabet_text_selected_color">#388E3C</color>
     <color name="splashbackground">#E2F2FE</color>
 
 </resources>
