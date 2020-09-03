@@ -73,7 +73,7 @@ public class FiturItem extends RecyclerView.Adapter<FiturItem.ItemRowHolder> {
 
                 }
             });
-        } else if (singleItem.getIdFitur() == 5) {
+        } /*else if (singleItem.getIdFitur() == 5) {
             holder.background.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -108,7 +108,7 @@ public class FiturItem extends RecyclerView.Adapter<FiturItem.ItemRowHolder> {
 
                 }
             });
-        }
+        }*/
     }
 
     @Override
