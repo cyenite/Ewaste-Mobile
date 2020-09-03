@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">E-Waste</string>
     <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
-        your_google_maps_key
+       AIzaSyAPT6AqZCwLhJTBU7zVnAGuEpP3CxkIEnU
     </string>
 
     ////////
