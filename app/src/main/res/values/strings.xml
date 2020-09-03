@@ -17,7 +17,7 @@
     <string name="no">NO</string>
 
     <string name="email">Email</string>
-    <string name="verifydesc">We send a verification code to the number</string>
+    <string name="verifydesc">We sent a verification code to the number</string>
     <string name="norecieve">I did not receive the code!</string>
     <string name="resend">Resend Code</string>
     <string name="confirm">Confirm</string>
