@@ -1,0 +1,262 @@
+package com.ewaste.collection.json;
+
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+import com.ewaste.collection.models.BeritaModel;
+import com.ewaste.collection.models.CatMerchantModel;
+import com.ewaste.collection.models.FiturModel;
+import com.ewaste.collection.models.MerchantModel;
+import com.ewaste.collection.models.MerchantNearModel;
+import com.ewaste.collection.models.PromoModel;
+import com.ewaste.collection.models.RatingModel;
+import com.ewaste.collection.models.User;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * Created by Ourdevelops Team on 10/13/2019.
+ */
+
+public class GetHomeResponseJson {
+
+    @SerializedName("message")
+    @Expose
+    private String message;
+
+    @SerializedName("saldo")
+    @Expose
+    private String saldo;
+
+    @SerializedName("currency")
+    @Expose
+    private String currency;
+
+    @SerializedName("currency_text")
+    @Expose
+    private String currency_text;
+
+    @SerializedName("app_aboutus")
+    @Expose
+    private String aboutus;
+
+    @SerializedName("app_email")
+    @Expose
+    private String email;
+
+    @SerializedName("app_contact")
+    @Expose
+    private String phone;
+
+    @SerializedName("app_website")
+    @Expose
+    private String website;
+
+    @SerializedName("stripe_active")
+    @Expose
+    private String stripeactive;
+
+    @SerializedName("paypal_key")
+    @Expose
+    private String paypalkey;
+
+    @SerializedName("paypal_mode")
+    @Expose
+    private String paypalmode;
+
+    @SerializedName("paypal_active")
+    @Expose
+    private String paypalactive;
+
+    @SerializedName("fitur")
+    @Expose
+    private List<FiturModel> fitur = new ArrayList<>();
+
+    @SerializedName("ratinghome")
+    @Expose
+    private List<RatingModel> rating = new ArrayList<>();
+
+    @SerializedName("beritahome")
+    @Expose
+    private List<BeritaModel> berita = new ArrayList<>();
+
+    @SerializedName("slider")
+    @Expose
+    private List<PromoModel> slider = new ArrayList<>();
+
+    @SerializedName("data")
+    @Expose
+    private List<User> data = new ArrayList<>();
+
+    @SerializedName("merchantpromo")
+    @Expose
+    private List<MerchantModel> merchantpromo = new ArrayList<>();
+
+    @SerializedName("merchantnearby")
+    @Expose
+    private List<MerchantNearModel> merchantnear = new ArrayList<>();
+
+    @SerializedName("kategorymerchanthome")
+    @Expose
+    private List<CatMerchantModel> catmerchant = new ArrayList<>();
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+    public String getSaldo() {
+        return saldo;
+    }
+
+    public void setSaldo(String saldo) {
+        this.saldo = saldo;
+    }
+
+    public String getCurrency() {
+        return currency;
+    }
+
+    public void setCurrency(String currency) {
+        this.currency = currency;
+    }
+
+    public String getCurrencytext() {
+        return currency_text;
+    }
+
+    public void setCurrencytext(String currencytext) {
+        this.currency_text = currencytext;
+    }
+
+    public List<FiturModel> getFitur() {
+        return fitur;
+    }
+
+    public void setFitur(List<FiturModel> fitur) {
+        this.fitur = fitur;
+    }
+
+    public List<PromoModel> getSlider() {
+        return slider;
+    }
+
+    public void setSlider(List<PromoModel> slider) {
+        this.slider = slider;
+    }
+
+    public String getAboutus() {
+        return aboutus;
+    }
+
+    public void setAboutus(String aboutus) {
+        this.aboutus = aboutus;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public String getWebsite() {
+        return website;
+    }
+
+    public void setWebsite(String website) {
+        this.website = website;
+    }
+
+    public List<RatingModel> getRating() {
+        return rating;
+    }
+
+    public void setRating(List<RatingModel> rating) {
+        this.rating = rating;
+    }
+
+    public List<BeritaModel> getBerita() {
+        return berita;
+    }
+
+    public void setBerita(List<BeritaModel> berita) {
+        this.berita = berita;
+    }
+
+    public List<User> getData() {
+        return data;
+    }
+
+    public void setData(List<User> data) {
+        this.data = data;
+    }
+
+    public String getStripeactive() {
+        return stripeactive;
+    }
+
+    public void setStripeactive(String stripeactive) {
+        this.stripeactive = stripeactive;
+    }
+
+    public String getPaypalkey() {
+        return paypalkey;
+    }
+
+    public void setPaypalkey(String paypalkey) {
+        this.paypalkey = paypalkey;
+    }
+
+    public String getPaypalmode() {
+        return paypalmode;
+    }
+
+    public void setPaypalmode(String paypalmode) {
+        this.paypalmode = paypalmode;
+    }
+
+    public String getPaypalactive() {
+        return paypalactive;
+    }
+
+    public void setPaypalactive(String paypalactive) {
+        this.paypalactive = paypalactive;
+    }
+
+    public List<MerchantModel> getMerchantpromo() {
+        return merchantpromo;
+    }
+
+    public void setMerchantpromo(List<MerchantModel> merchantpromo) {
+        this.merchantpromo = merchantpromo;
+    }
+
+    public List<CatMerchantModel> getCatmerchant() {
+        return catmerchant;
+    }
+
+    public void setCatmerchant(List<CatMerchantModel> catmerchant) {
+        this.catmerchant = catmerchant;
+    }
+
+    public List<MerchantNearModel> getMerchantnear() {
+        return merchantnear;
+    }
+
+    public void setMerchantnear(List<MerchantNearModel> merchantnear) {
+        this.merchantnear = merchantnear;
+    }
+}

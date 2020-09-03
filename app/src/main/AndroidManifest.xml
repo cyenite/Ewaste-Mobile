@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.ourdevelops.ourjek"
+    package="com.ewaste.collection"
     android:installLocation="auto">
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
@@ -19,7 +19,7 @@
     <uses-feature android:name="android.hardware.camera.autofocus" />
 
     <application
-        android:name=".constants.BaseApp"
+        android:name="com.ewaste.collection.constants.BaseApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -29,60 +29,60 @@
         android:theme="@style/AppTheme"
         tools:replace="android:supportsRtl">
         <activity
-            android:name=".activity.DetailOrderActivity"
+            android:name="com.ewaste.collection.activity.DetailOrderActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
         <activity
-            android:name=".activity.MapsMerchantActivity"
+            android:name="com.ewaste.collection.activity.MapsMerchantActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
         <activity
-            android:name=".activity.DetailMerchantActivity"
+            android:name="com.ewaste.collection.activity.DetailMerchantActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
         <activity
-            android:name=".activity.PicklocationActivity"
+            android:name="com.ewaste.collection.activity.PicklocationActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
         <activity
-            android:name=".activity.AllMerchantActivity"
+            android:name="com.ewaste.collection.activity.AllMerchantActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
         <activity
-            android:name=".activity.AllBeritaActivity"
+            android:name="com.ewaste.collection.activity.AllBeritaActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
         <activity
-            android:name=".activity.WalletActivity"
+            android:name="com.ewaste.collection.activity.WalletActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
         <activity
-            android:name=".activity.ChatActivity"
+            android:name="com.ewaste.collection.activity.ChatActivity"
             android:screenOrientation="portrait" />
 
-        <service android:name=".utils.api.service.MessagingService">
+        <service android:name="com.ewaste.collection.utils.api.service.MessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
 
         <activity
-            android:name=".activity.RateActivity"
+            android:name="com.ewaste.collection.activity.RateActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Login_phone"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
         <activity
-            android:name=".activity.CreditcardActivity"
+            android:name="com.ewaste.collection.activity.CreditcardActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Login_phone"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
         <activity
-            android:name=".activity.WithdrawActivity"
+            android:name="com.ewaste.collection.activity.WithdrawActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Login_phone"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
         <activity
-            android:name=".activity.SplashActivity"
+            android:name="com.ewaste.collection.activity.SplashActivity"
             android:noHistory="true"
             android:theme="@style/AppTheme">
             <intent-filter>
@@ -92,59 +92,59 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity.IntroActivity"
+            android:name="com.ewaste.collection.activity.IntroActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.BeritaDetailActivity"
+            android:name="com.ewaste.collection.activity.BeritaDetailActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.TopupSaldoActivity"
+            android:name="com.ewaste.collection.activity.TopupSaldoActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
         <activity
-            android:name=".activity.RideCarActivity"
+            android:name="com.ewaste.collection.activity.RideCarActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.RentCarActivity"
+            android:name="com.ewaste.collection.activity.RentCarActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.SendActivity"
+            android:name="com.ewaste.collection.activity.SendActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.SendDetailActivity"
+            android:name="com.ewaste.collection.activity.SendDetailActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.ProgressActivity"
+            android:name="com.ewaste.collection.activity.ProgressActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.PrivacyActivity"
+            android:name="com.ewaste.collection.activity.PrivacyActivity"
             android:screenOrientation="portrait"
             android:theme="@style/noActionBar" />
         <activity
-            android:name=".activity.RegisterActivity"
+            android:name="com.ewaste.collection.activity.RegisterActivity"
             android:screenOrientation="portrait"
             android:theme="@style/noActionBar" />
         <activity
-            android:name=".activity.EditProfileActivity"
+            android:name="com.ewaste.collection.activity.EditProfileActivity"
             android:screenOrientation="portrait"
             android:theme="@style/noActionBar" />
         <activity
-            android:name=".activity.LoginActivity"
+            android:name="com.ewaste.collection.activity.LoginActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Login_phone"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
         <activity
-            android:name=".activity.LupapassActivity"
+            android:name="com.ewaste.collection.activity.LupapassActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Login_phone"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
         <activity
-            android:name=".activity.ChangepassActivity"
+            android:name="com.ewaste.collection.activity.ChangepassActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Login_phone"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
         <activity
-            android:name=".activity.MainActivity"
+            android:name="com.ewaste.collection.activity.MainActivity"
             android:screenOrientation="portrait" />
 
         <meta-data
@@ -153,7 +153,7 @@
 
         <provider
             android:name="androidx.core.content.FileProvider"
-            android:authorities="com.ourdevelops.ourjek.fileprovider"
+            android:authorities="com.ewaste.collection.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data

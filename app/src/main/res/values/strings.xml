@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Ouride</string>
+    <string name="app_name">Ewaste Collection</string>
     <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
         your_google_maps_key
     </string>
