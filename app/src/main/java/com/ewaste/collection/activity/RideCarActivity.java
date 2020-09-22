@@ -396,7 +396,7 @@ public class RideCarActivity extends AppCompatActivity
                 LatLng latLng = place.getLatLng();
                 if (latLng != null) {
                     gMap.moveCamera(CameraUpdateFactory.newLatLngZoom(
-                            new LatLng(latLng.latitude, latLng.longitude), 15f)
+                            new LatLng(-1.2902777777777779,36.698055555555555), 15f)
                     );
                     onDestination();
                 }
@@ -547,7 +547,8 @@ public class RideCarActivity extends AppCompatActivity
     private void onDestination() {
 
         if (destinationMarker != null) destinationMarker.remove();
-        LatLng centerPos = new LatLng(-1.2902777777777779,36.698055555555555);
+      //  LatLng centerPos = new LatLng(-1.2902777777777779,36.698055555555555);
+        LatLng centerPos = gMap.getCameraPosition().target;
         destinationMarker = gMap.addMarker(new MarkerOptions()
                 .position(centerPos)
                 .title("Destination")
