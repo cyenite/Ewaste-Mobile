@@ -396,7 +396,7 @@ public class RideCarActivity extends AppCompatActivity
                 LatLng latLng = place.getLatLng();
                 if (latLng != null) {
                     gMap.moveCamera(CameraUpdateFactory.newLatLngZoom(
-                            new LatLng(-1.2902777777777779,36.698055555555555), 15f)
+                            new LatLng(-1.352273, 36.902663), 15f)
                     );
                     onDestination();
                 }
@@ -547,8 +547,8 @@ public class RideCarActivity extends AppCompatActivity
     private void onDestination() {
 
         if (destinationMarker != null) destinationMarker.remove();
-      //  LatLng centerPos = new LatLng(-1.2902777777777779,36.698055555555555);
-        LatLng centerPos = gMap.getCameraPosition().target;
+        LatLng centerPos = new LatLng(-1.352273, 36.902663);
+        //LatLng centerPos = gMap.getCameraPosition().target;
         destinationMarker = gMap.addMarker(new MarkerOptions()
                 .position(centerPos)
                 .title("Destination")
@@ -1060,5 +1060,42 @@ public class RideCarActivity extends AppCompatActivity
         Utility.currencyTXT(saldotext, saldoWallet, this);
     }
 
+    public float getDistance(double lat1, double lon1, double lat2, double lon2) {
+        android.location.Location homeLocation = new android.location.Location("");
+        homeLocation .setLatitude(lat1);
+        homeLocation .setLongitude(lon1);
+
+        android.location.Location targetLocation = new android.location.Location("");
+        targetLocation .setLatitude(lat2);
+        targetLocation .setLongitude(lon2);
+
+        float distanceInMeters =  targetLocation.distanceTo(homeLocation);
+        return distanceInMeters ;
+    }
+
+    public LatLng getShortDestination(){
+        LatLng shortDestination;
+        double userLat = pickUpLatLang.latitude;
+        double userLon = pickUpLatLang.longitude;
+
+        float pickup1 = getDistance(userLat,userLon,-1.352273, 36.902663);
+        float pickup2 = getDistance(userLat,userLon,0.173818, 35.092268);
+        float pickup3 = getDistance(userLat,userLon,-1.276271, 35.553694);
+
+        if(pickup1<pickup2 && pickup1<pickup3)
+        {
+            shortDestination = new LatLng(-1.352273, 36.902663);
+        }
+        else if(pickup2<pickup1 && pickup2<pickup3)
+        {
+            shortDestination = new LatLng(0.173818, 35.092268);
+        }
+        else
+        {
+            shortDestination = new LatLng(-1.276271, 35.553694);
+        }
+
+        return shortDestination;
+    }
 
 }
