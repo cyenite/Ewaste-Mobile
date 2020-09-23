@@ -54,7 +54,7 @@
     <string name="ride_note">Notes</string>
 
     <string name="ride_setPickUp">Set PickUp</string>
-    <string name="ride_setDestination">Get Nearest E-Waste Collection Center</string>
+    <string name="ride_setDestination">Get Nearest EWaste Collection Center</string>
     <string name="text_order">Order</string>
     <string name="waiting_desc">We are searching for the closest driver</string>
     <string name="waiting_pleaseWait">Please Wait....</string>
